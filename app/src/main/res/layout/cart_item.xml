@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="117dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:orientation="horizontal"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@color/lightBackground">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cart_item_photo_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="25dp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+
+            <ImageView
+                android:id="@+id/cart_item_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="24dp"
+                tools:src="@drawable/drink"/>
+
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="108dp"
+            android:layout_marginLeft="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="8dp"
+                    android:gravity="top">
+
+                    <TextView
+                        android:id="@+id/cart_item_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="24dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="STEAK"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cart_item_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:maxHeight="80dp"
+                    android:text="350g, zemiakove lupienky, cuicd uhd iudhvesnak, bazalka, dalsie, dalsie, dalsie, dalsie, dalsei, dalsie, dalsie, dalsie, dalsie, dalsie, dalsie, dalsie, dalsie, dalsie, dalesie, dalsie, dalsie, dalsie, dalsie, "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="16dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/cart_item_count"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="1x"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/cart_item_price_sum_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22,0 €"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cart_remove_food_item"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_close_black_24dp"
+                android:contentDescription="@null"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"/>
+
+</LinearLayout>

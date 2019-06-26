@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui.onBoarding.OnboardingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/obr"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Prihlásiť sa"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/round_button_onboarding"/>
+
+        <Button
+            android:id="@+id/without_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Pokračovať bez prihlásenia"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/round_button_onboarding"/>
+
+        <Button
+            android:id="@+id/registration_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Registrácia"
+            android:theme="@style/AppTheme.Button"
+            android:background="@drawable/round_button_onboarding"/>
+
+    </LinearLayout>
+
+</ui.onBoarding.OnboardingView>

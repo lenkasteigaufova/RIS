@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui.dayFood.DayFoodsView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/food_day_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/day_foods_refresh"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/foods_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingBottom="64dp"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/foods_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTintMode="src_in"/>
+
+        <TextView
+            android:id="@+id/nothing_to_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing to show yet"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+</ui.dayFood.DayFoodsView>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui.dayFood.DayFoodDetailView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                        <ImageView
+                            android:id="@+id/day_food_detail_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/food1"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:background="#73000000"/>
+
+                        <TextView
+                            android:id="@+id/day_food_detail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="JEDLO"
+                            android:textAllCaps="true"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="32dp"
+                            android:maxLines="4"
+                            android:textStyle="bold"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="bottom"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom|right">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/day_food_detail_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginRight="16dp"
+                            android:clickable="true"
+                            app:backgroundTint="@color/blue_grey"
+                            android:src="@drawable/ic_cart_plus_white_48dp" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_timelapse_black_36dp"
+                            android:tint="@color/grey_brown2"/>
+
+                        <TextView
+                            android:id="@+id/day_food_make_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey_brown2"
+                            android:paddingLeft="4dp"
+                            android:text="20m"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_scale_balance_black_36dp"
+                            android:tint="@color/grey_brown2"/>
+
+                        <TextView
+                            android:id="@+id/day_food_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey_brown2"
+                            android:paddingLeft="4dp"
+                            android:text="250g"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/ic_price_tag_32dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="@color/grey_brown2"/>
+
+                        <TextView
+                            android:id="@+id/day_food_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey_brown2"
+                            android:paddingLeft="4dp"
+                            android:text="10$"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_light"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Pochádzajúci zo zadnej časti chrbta - z nízkej roštenky Patrí medzi najznámejšie steaky s typickou chuťou hovädzieho mäsa. Je obalený vrstvou tuku, vďaka ktorej má tento steak vynikajúcu vôňu a svoju jedinečnú chuť. \n \n \n Odporúčame STREDNE PREPEČENÝ. \n \n \n Alergény: 1, 2, 3, 14"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@drawable/food_gradient"
+            android:titleTextColor="@color/white"
+            app:titleTextColor="@color/white"
+            app:theme = "@style/Toolbar"/>
+
+
+    </FrameLayout>
+
+</ui.dayFood.DayFoodDetailView>

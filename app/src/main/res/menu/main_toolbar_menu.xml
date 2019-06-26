@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/alergens"
+        app:showAsAction="never"
+        android:title="Alergény">
+    </item>
+    <item
+        android:id="@+id/opening_hours"
+        app:showAsAction="never"
+        android:title="Otváracie hodiny">
+    </item>
+</menu>
